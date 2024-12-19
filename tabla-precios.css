@@ -1,0 +1,65 @@
+body{
+    font-family: 'Font Name', serif;
+    
+}
+h2{
+    font-weight: 400; /* con esto estamos modificando latipografia en el html*/
+
+}
+p{
+    font-weight: 400; /*Modificamos la tipografia de los parrafos */
+}
+.container{
+    margin: 0 auto; /* si lo actualizamos en html no pasara nada*/
+    width: 90%px;   /* aqui ya le comenzamos adarle forma al html */
+
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap; 
+}
+.text-center{
+    text-align: center;
+}          /* en este apartado se aplico la propiedad box chadow */
+.columna{
+    background: rgb(228, 228, 228);
+    color: #333;
+    border: 1px solid #333;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #888;
+    width: 23%;
+    box-sizing: border-box; /* con esto estamos diciendo que el borde se calcule automatimaente */
+}
+.precio{
+    font-size: 50px;
+    color: rgba(255, 0, 34, 0.938);
+}
+.btn-precio{ /* aplicando ala tabla precio los margene de color dela caja o boton*/
+    background: salmon;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.btn-precio:hover{ /* Aplicando una seudo clase al html*/
+    background: rgb(rgb(248, 78, 78));
+}
+
+@media (max-width: 1070px){
+    .columna{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 600px){
+    .columna{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+
